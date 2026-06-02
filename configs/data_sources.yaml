@@ -1,0 +1,19 @@
+pubmed:
+  base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+  max_abstracts: 300
+  queries:
+    - "celiac disease drug therapy"
+    - "celiac disease IL15"
+    - "refractory celiac disease treatment"
+  email: "your@email.com" # required by NCBI for API use, put your email before using the API
+  rate_limit_per_second: 3
+
+open_targets:
+  base_url: "https://api.platform.opentargets.org/api/v4/graphql"
+  max_associations: 500
+
+pubtator:
+  base_url: "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/"
+
+clinicaltrials:
+  base_url: "https://clinicaltrials.gov/api/v2/"

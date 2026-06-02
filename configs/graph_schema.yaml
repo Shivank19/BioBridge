@@ -1,0 +1,41 @@
+node_types:
+  - Disease
+  - Drug
+  - Gene
+  - Pathway
+  - Mechanism
+  - Paper
+  - ClinicalTrial
+
+edge_types:
+  - name: treats
+    from: Drug
+    to: Disease
+  - name: targets
+    from: Drug
+    to: Gene
+  - name: associated_with
+    from: Gene
+    to: Disease
+  - name: co_occurs_with
+    from: Drug
+    to: Gene
+  - name: mentioned_in
+    from: Drug
+    to: Paper
+  - name: regulates
+    from: Gene
+    to: Pathway
+  - name: part_of
+    from: Gene
+    to: Pathway
+  - name: implicated_in
+    from: Pathway
+    to: Disease
+
+edge_provenance_fields:
+  - source
+  - confidence
+  - paper_id
+  - date_collected
+  - evidence_text

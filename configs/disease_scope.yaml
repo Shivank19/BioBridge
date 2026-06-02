@@ -1,0 +1,23 @@
+# The primary disease this system is built for
+primary_disease:
+  name: "Celiac Disease"
+  mesh_id: "D002446"
+  mondo_id: "MONDO:0005130"
+  efo_id: "EFO_0001060"
+  synonyms:
+    - "Coeliac Disease"
+    - "Gluten Enteropathy"
+    - "Celiac Sprue"
+    - "Gluten Intolerance"
+
+# Known candidates used as sanity checks during evaluation
+sanity_check_candidates:
+  - name: "Larazotide"
+    type: "drug"
+    reason: "Phase 3 trial for celiac, targets intestinal permeability"
+  - name: "AMG 714"
+    type: "drug"
+    reason: "Anti-IL-15 monoclonal antibody, targets core celiac pathway"
+  - name: "Tofacitinib"
+    type: "drug"
+    reason: "JAK inhibitor, mechanistic support via JAK-STAT and IL-15"

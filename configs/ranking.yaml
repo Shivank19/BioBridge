@@ -1,0 +1,16 @@
+version: "v1"
+
+active_scorers:
+  - evidence_count
+  - path_scorer
+  - pagerank
+
+path_scorer:
+  max_path_length: 4
+  min_confidence: 0.3
+
+pagerank:
+  damping_factor: 0.85
+  seed_node_weight: 1.0
+
+top_k_candidates: 20
