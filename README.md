@@ -19,11 +19,11 @@ Computational biology researchers and bioinformaticians exploring mechanistic li
 
 The system is validated throughout development against three known celiac disease candidates with well-understood mechanisms:
 
-- **Larazotide** — in Phase 3 trials, targets intestinal
+- **Larazotide**: in Phase 3 trials, targets intestinal
   permeability
-- **AMG 714** — anti-IL-15 monoclonal antibody, targets the
+- **AMG 714**: anti-IL-15 monoclonal antibody, targets the
   core celiac immune pathway
-- **Tofacitinib** — JAK inhibitor with mechanistic support
+- **Tofacitinib**: JAK inhibitor with mechanistic support
   via JAK-STAT and IL-15 signaling
 
 If these three do not appear in the top 20 ranked candidates, something is wrong with the pipeline.
@@ -39,9 +39,9 @@ If these three do not appear in the top 20 ranked candidates, something is wrong
 ## Running the project
 
 ```bash
-uv venv
+python -m venv venv
 source .venv/bin/activate
-uv pip install -e ".[app]"
+pip install -r requirements.txt
 python scripts/01_collect_pubmed.py
 python scripts/02_extract_entities.py
 python scripts/03_build_graph.py
