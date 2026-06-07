@@ -6,7 +6,7 @@ requires-python = ">=3.11"
 
 [project.optional-dependencies]
 dev = ["pytest"]
-ingestion = ["requests", "pyyaml"]
+ingestion = ["requests", "pyyaml", "python-dotenv"]
 graph = ["networkx", "pandas", "pyarrow"]
 ranking = ["scipy"]
 app = ["gradio"]
