@@ -1,0 +1,16 @@
+[project]
+name = "drug-repurposing-kg"
+version = "0.1.0"
+description = "Explainable knowledge graph for drug repurposing in celiac disease"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+ingestion = ["requests", "pyyaml"]
+graph = ["networkx", "pandas", "pyarrow"]
+ranking = ["scipy"]
+app = ["gradio"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
