@@ -217,9 +217,13 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Ignore all data files
+# Data
 data/**/*
-
-# But keep the folder structure
 !data/**/
 !data/**/.gitkeep
+!data/*.md
+
+# Models
+models/**/*
+!models/**/
+!models/**/.gitkeep
